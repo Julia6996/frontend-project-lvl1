@@ -4,3 +4,4 @@
 <a href="https://codeclimate.com/github/codeclimate/codeclimate/test_coverage"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage" /></a>
 [![asciicast](https://asciinema.org/a/HQf9w0OqrSQTpOF6JitVa76r6.svg)](https://asciinema.org/a/HQf9w0OqrSQTpOF6JitVa76r6)
 [![asciicast](https://asciinema.org/a/v0LlgenziMtJHFOJ0PFDTA8HB.svg)](https://asciinema.org/a/v0LlgenziMtJHFOJ0PFDTA8HB)
+[![asciicast](https://asciinema.org/a/ZBW1H4jvz1z6RhXJFsqOvbfBi.svg)](https://asciinema.org/a/ZBW1H4jvz1z6RhXJFsqOvbfBi)
