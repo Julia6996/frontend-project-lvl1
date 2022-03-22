@@ -25,6 +25,8 @@
   },
   "homepage": "https://github.com/Julia6996/frontend-project-lvl1#readme",
   "dependencies": {
+    "bcrypt": "^5.0.1",
+    "empty": "^0.10.1",
     "readline-sync": "^1.4.10"
   },
   "devDependencies": {
