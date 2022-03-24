@@ -13,10 +13,10 @@ const createRound = () => {
   return [trueAnswer, question];
 };
 
-const startGame = () => {
+const startGameEven = () => {
   const description = 'Answer "yes" if the number is even, otherwise answer "no".';
 
   runGame(createRound, description);
 };
 
-export default startGame;
+export default startGameEven;
