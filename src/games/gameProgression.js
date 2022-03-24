@@ -1,5 +1,5 @@
 import { getRandomInt } from '../index.js';
-import runGame from '../partyChec.js';
+import runGame from '../gameEngine.js';
 
 const createProgression = (progressionLength, randomNum) => {
   let firstElem = randomNum;
