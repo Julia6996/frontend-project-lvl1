@@ -19,6 +19,7 @@ const createRound = () => {
   const trueAnswer = arrProgression[randomStep];
   arrProgression[randomStep] = '..';
   const question = `Question: ${arrProgression.join(' ')}`;
+
   return [trueAnswer, question];
 };
 
