@@ -17,7 +17,7 @@ const runGame = (createQuestion, discription) => {
 
     // eslint-disable-next-line eqeqeq
     if (correctAnswer != userAnswer) {
-      return console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${correctAnswer}". \n let's try again, ${userName}!`);
+      return console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${correctAnswer}". \n Let's try again, ${userName}!`);
     }
     console.log('Correct!');
   }
