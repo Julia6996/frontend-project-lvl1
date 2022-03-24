@@ -15,7 +15,7 @@ const createRound = () => {
   const randomStep = getRandomInt(0, 10);
   const progressionLength = 10;
 
-  const arrProgression = createProgression(progressionLength, randomNum); 
+  const arrProgression = createProgression(progressionLength, randomNum);
   const trueAnswer = arrProgression[randomStep];
   arrProgression[randomStep] = '..';
   const question = `Question: ${arrProgression.join(' ')}`;
