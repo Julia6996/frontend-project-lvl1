@@ -5,7 +5,7 @@ const createProgression = (progressionLength, randomNum) => {
   let firstElem = randomNum;
   const arrProgression = [];
   for (let i = 0; i < progressionLength; i += 1) {
-    arrProgression.push(firstElem += 2);
+    arrProgression.push(firstElem += 3);
   }
   return arrProgression;
 };
