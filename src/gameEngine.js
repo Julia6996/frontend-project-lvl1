@@ -1,17 +1,15 @@
+/* eslint-disable eqeqeq */
 import readlineSync from 'readline-sync';
-import { getNameAndSayHi } from './index.js';
+import { getNameAndSayHi } from './cli.js';
 
 // eslint-disable-next-line consistent-return
-const runGame = (createQuestion, discription) => {
+const runGame = (createRound, description) => {
   const numberOfRounds = 3;
 
-  const userName = getNameAndSayHi(discription);
+  const userName = getNameAndSayHi(description);
 
   for (let i = 0; i < numberOfRounds; i += 1) {
-    const correctAhswerAndQuestion = createQuestion();
-    const correctAnswer = correctAhswerAndQuestion[0];
-    const question = correctAhswerAndQuestion[1];
-
+    const [correctAnswer, question] = createRound();
     console.log(question);
     const userAnswer = readlineSync.question('Your answer:');
 

@@ -1,4 +1,4 @@
-import { getRandomInt } from '../index.js';
+import getRandomInt from '../geRandomInt.js';
 import runGame from '../gameEngine.js';
 
 const createProgression = (progressionLength, randomNum) => {
@@ -24,8 +24,8 @@ const createRound = () => {
 };
 
 const startGameProgression = () => {
-  const discription = 'What number is missing in the progression?';
-  runGame(createRound, discription);
+  const description = 'What number is missing in the progression?';
+  runGame(createRound, description);
 };
 
 export default startGameProgression;
