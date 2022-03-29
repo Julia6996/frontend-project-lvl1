@@ -12,7 +12,7 @@ const createProgression = (progressionLength, randomNum) => {
 
 const createRound = () => {
   const randomNum = getRandomInt(0, 100);
-  const randomStep = getRandomInt(0, 10);
+  const randomStep = getRandomInt(0, 9);
   const progressionLength = 10;
 
   const arrProgression = createProgression(progressionLength, randomNum);
