@@ -7,11 +7,11 @@
 ___
 + ***How to install a project:***
 ___
-1.  Copy the *repository*
+1.  Copy the ***repository***
 ```
 git@github.com:Julia6996/frontend-project-lvl1.git
 ```
-2.  Type *make install* and the project is downloaded
+2.  Type ***make install*** and the project is downloaded
 ```
  make install
 ```
