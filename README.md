@@ -1,4 +1,4 @@
-# **Hexlet Project: *Brain Games***
+# **Hexlet Project: *"Brain Games"*** ![brain-games](https://cepia.ru/images/u/pages/brain-game-cover-34.jpg)
 
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Julia6996/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/Julia6996/frontend-project-lvl1/actions)
@@ -17,7 +17,7 @@ git@github.com:Julia6996/frontend-project-lvl1.git
 ```
 ___
 ## ***What is this project about?***
-___
+
 *My first project in Hexlet. "Brain Games— is a set of five console games. Each game asks questions that need to be answered correctly. The game is completed after three correct answers. Incorrect answers end the game and offer to go through it again. Games:*
 + ***Calculator:***  Arithmetic expressions that need to be calculated.
 + ***Progression:*** find the missing number in the arithmetic progression
@@ -26,7 +26,7 @@ ___
 + ***Checking a prime number***
 ___
 ## ***How start the game?***
-___
+
 - [x]  *To start the brain-even, type:* ***brain-even***
 
 [![asciicast](https://asciinema.org/a/DiIADA68jP6M8JoJGQi7J6u5l.svg)](https://asciinema.org/a/DiIADA68jP6M8JoJGQi7J6u5l)
