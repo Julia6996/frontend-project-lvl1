@@ -4,20 +4,20 @@ import runGame from '../gameEngine.js';
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (num) => {
-  if (num < 3) {
-    return false;
+  if (num < 2) {
+    return 'no';
   }
   for (let i = 2; i < num; i += 1) {
     if (num % i === 0) {
-      return false;
+      return 'no';
     }
   }
-  return true;
+  return 'yes';
 };
 
 const createRound = () => {
   const randomNum = getRandomInt(1, 50);
-  const trueAnswer = isPrime(randomNum) ? 'yes' : 'no';
+  const trueAnswer = isPrime(randomNum);
   const question = `Question: ${randomNum}`;
   return [trueAnswer, question];
 };
