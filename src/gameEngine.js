@@ -1,12 +1,13 @@
-/* eslint-disable eqeqeq */
 import readlineSync from 'readline-sync';
-import { getNameAndSayHi } from './cli.js';
 
 // eslint-disable-next-line consistent-return
 const runGame = (createRound, description) => {
   const numberOfRounds = 3;
 
-  const userName = getNameAndSayHi(description);
+  console.log('Welcome to the Brain Games!');
+  const userName = readlineSync.question('May I have your name?');
+  console.log(`Hello, ${userName}!`);
+  console.log(description);
 
   for (let i = 0; i < numberOfRounds; i += 1) {
     const [correctAnswer, question] = createRound();
