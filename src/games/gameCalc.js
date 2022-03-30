@@ -14,12 +14,12 @@ const getTrueAnswer = (x, operator, y) => {
     case '*':
       return x * y;
     default:
-      throw new Error('Unsupported operator');
+      return new Error('Unsupported operator');
   }
 };
 
 const createRound = () => {
-  const randomOperations = operations[getRandomInt(0, operations.length)];
+  const randomOperations = operations[getRandomInt(0, operations.length - 1)];
   const firstNum = getRandomInt(0, 10);
   const secondNum = getRandomInt(0, 10);
   const question = `Question: ${firstNum} ${randomOperations} ${secondNum}`;
@@ -28,8 +28,6 @@ const createRound = () => {
   return [trueAnswer, question];
 };
 
-const startGameCalc = () => {
-  runGame(createRound, description);
-};
+const startGameCalc = () => runGame(createRound, description);
 
 export default startGameCalc;
