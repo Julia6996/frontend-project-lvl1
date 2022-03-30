@@ -1,6 +1,8 @@
 import getRandomInt from '../getRandomInt.js';
 import runGame from '../gameEngine.js';
 
+const description = 'Find the greatest common divisor of given numbers.';
+
 const getTrueAnswer = (a, b) => {
   if (b) {
     return getTrueAnswer(b, a % b);
@@ -15,7 +17,6 @@ const createRound = () => {
 };
 
 const startGameGcd = () => {
-  const description = 'Find the greatest common divisor of given numbers.';
   runGame(createRound, description);
 };
 

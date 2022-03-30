@@ -1,21 +1,19 @@
 import getRandomInt from '../getRandomInt.js';
 import runGame from '../gameEngine.js';
 
-const evenNumber = (number) => number % 2 === 0;
+const description = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const getCorrectAnswer = (num) => (evenNumber(num) ? 'yes' : 'no');
+const evenNumber = (number) => number % 2 === 0;
 
 const createRound = () => {
   const randomNum = getRandomInt(0, 100);
-  const trueAnswer = getCorrectAnswer(randomNum);
+  const trueAnswer = evenNumber(randomNum) ? 'yes' : 'no';
   const question = `Question: ${randomNum}`;
 
   return [trueAnswer, question];
 };
 
 const startGameEven = () => {
-  const description = 'Answer "yes" if the number is even, otherwise answer "no".';
-
   runGame(createRound, description);
 };
 
