@@ -14,7 +14,7 @@ const runGame = (createRound, description) => {
     const userAnswer = readlineSync.question('Your answer:');
 
     // eslint-disable-next-line eqeqeq
-    if (correctAnswer != userAnswer) {
+    if (correctAnswer !== userAnswer) {
       return console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${correctAnswer}". \n Let's try again, ${userName}!`);
     }
     console.log('Correct!');

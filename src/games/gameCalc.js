@@ -1,4 +1,4 @@
-import getRandomInt from '../geRandomInt.js';
+import getRandomInt from '../getRandomInt.js';
 import runGame from '../gameEngine.js';
 
 const getTrueAnswer = (x, operator, y) => {
@@ -23,7 +23,7 @@ const createRound = () => {
   const question = `Question: ${firstNum} ${randomOperations} ${secondNum}`;
   const trueAnswer = getTrueAnswer(firstNum, randomOperations, secondNum);
 
-  return [trueAnswer, question];
+  return [String(trueAnswer), question];
 };
 
 const startGameCalc = () => {

@@ -1,11 +1,12 @@
-import getRandomInt from '../geRandomInt.js';
+import getRandomInt from '../getRandomInt.js';
 import runGame from '../gameEngine.js';
 
 const createProgression = (progressionLength, randomNum) => {
   let firstElem = randomNum;
+  const randomStep = getRandomInt(2, 5);
   const arrProgression = [];
   for (let i = 0; i < progressionLength; i += 1) {
-    arrProgression.push(firstElem += 3);
+    arrProgression.push(firstElem += randomStep);
   }
   return arrProgression;
 };
@@ -20,7 +21,7 @@ const createRound = () => {
   arrProgression[randomStep] = '..';
   const question = `Question: ${arrProgression.join(' ')}`;
 
-  return [trueAnswer, question];
+  return [String(trueAnswer), question];
 };
 
 const startGameProgression = () => {
