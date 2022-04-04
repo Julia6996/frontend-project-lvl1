@@ -5,7 +5,7 @@ const description = 'What is the result of the expression?';
 
 const operations = ['+', '-', '*'];
 
-const getTrueAnswer = (x, operator, y) => {
+const calculation = (x, operator, y) => {
   switch (operator) {
     case '+':
       return x + y;
@@ -23,7 +23,7 @@ const createRound = () => {
   const firstNum = getRandomInt(0, 10);
   const secondNum = getRandomInt(0, 10);
   const question = `Question: ${firstNum} ${randomOperations} ${secondNum}`;
-  const trueAnswer = String(getTrueAnswer(firstNum, randomOperations, secondNum));
+  const trueAnswer = String(calculation(firstNum, randomOperations, secondNum));
 
   return [trueAnswer, question];
 };
